@@ -1,0 +1,33 @@
+.map{
+    position: relative;
+    @include phones {
+        display: flex;
+        position: initial;
+        flex-direction: column;
+    }
+}
+.map__yandex {
+    width: 100%;
+    height: 100vh;
+    @include phones {
+        height: initial;
+    }
+}
+.map__pic {
+    width: 100%;
+    height: 100%;
+
+}
+.map__contacts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include phones {
+        position: initial;
+        order: -1;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}

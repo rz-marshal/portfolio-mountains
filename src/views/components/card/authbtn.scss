@@ -1,0 +1,15 @@
+.authbtn {
+    width: 180px;
+    height: 45px;
+    border: $white solid 2px;
+    border-radius: 3px;
+    text-align: center;
+    color: $white;
+    background-color: transparent;
+    &:hover {
+        transition: 1s;
+        background: $white;
+        color: $green;
+        cursor:pointer;
+    }
+}

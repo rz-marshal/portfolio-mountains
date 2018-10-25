@@ -1,0 +1,40 @@
+script(type='text/x-template')#slider-root
+    .slider__display
+        info(
+            :work="currentWork"
+        )
+        display(
+            :work="currentWork"
+        )
+        btns(
+            @slide="handleSlide"
+            :index = "currentIndex"
+            :works = "works"
+        )
+script(type='text/x-template')#slider-info
+    .slider__description
+        .description__container
+            .description__title
+                h3.subtitle.subtitle--slider {{work.title}}
+            .description__text {{work.skills}}
+            a(:href='work.link' target="_blank").description__button.button
+                svg(class='description__button-img')
+                    use(xlink:href='./assets/images/icons/sprite.svg#link')
+                span.description__button-text Посмотреть сайт
+
+script(type='text/x-template')#slider-display
+    .slider__preview
+        .slider__prev-slide
+            img(:src='work.photo', alt='slider1', class='prev-slide__img')
+script(type='text/x-template')#slider-btns
+    .slider__control-row
+        button(@click="slide('prev')").slider__button
+            img(:src='prevButtonWorks[Index].photo', alt='slider2', class='control-slide__img')
+            .slider__button-wrap
+                svg(class='slider__button-icon')
+                    use(xlink:href='./assets/images/icons/sprite.svg#portf_arrow_down')
+        button(@click="slide('next')").slider__button
+            img(:src='nextButtonWorks[Index].photo', alt='slider3', class='control-slide__img')
+            .slider__button-wrap
+                svg(class='slider__button-icon')
+                    use(xlink:href='./assets/images/icons/sprite.svg#portf_arrow_up')

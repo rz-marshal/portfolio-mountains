@@ -1,0 +1,80 @@
+.skills{
+    margin-bottom: 30px;
+    @include narrow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.skills__row{
+    @include narrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+.slill__row-list{
+    @include phones {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.skills__row-title{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.skill{
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    color: $green;
+    &:last-child{
+        margin-right: 0;
+    }
+    @include phones {
+        margin: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.skills__row-item{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @include phones {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+.skill__circle{
+    width: 110px;
+    height: 110px;
+}
+.skill__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: initial;
+}
+.skill__circle{
+    transform: rotate(-90deg);
+   }
+   .circle__grey{
+       fill: none;
+       stroke: $light-grey;
+       stroke-width: 20px;
+   }
+   .circle__green{
+       fill: none;
+       stroke: $green;
+       stroke-width: 20px;
+       stroke-dasharray: 282.6;
+       stroke-dashoffset: 282.6; // 14,3 - шаг заливки = 5% длинны окружности
+   }

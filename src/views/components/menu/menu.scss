@@ -1,0 +1,32 @@
+.menu{
+    color: white;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item{
+    margin-right: 40px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:first-child{
+        margin-left: 30px;
+        @include phones {
+            margin-left: 0;
+        }
+    }
+    @include narrow {
+        margin-right: 20px;
+    }
+    @include phones{
+        margin-right: 15px;
+    }
+}
+.menu__link{
+    text-decoration: none;
+    color: $white;
+    transition: 500ms;
+    &:hover{
+        color:$green;
+    }
+}

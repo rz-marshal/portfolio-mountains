@@ -1,0 +1,11 @@
+extends ../main.layout.pug
+
+block variables
+    - var title = 'Мои работы'
+
+block scripts
+    script(src='works.bundle.js')
+
+block content
+    include ../components/slider/slider
+    include ../components/reviews/reviews

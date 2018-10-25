@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>WElcome</title>
+		<link rel="stylesheet" href="main.min.css"/>
+	</head>
+	<body></body>
+	<div class="preloader preloader--active" id="preloader">
+		<div class="preloader__bg"><img class="preloader__bg-img" src="./assets/images//preloader/bg.jpg" alt="background"/>
+		</div>
+		<div class="preloader__svg">
+			<svg class="preloader__circle" viewbox="0 0 110 110">
+				<circle class="preloader__svg-img preloader__svg-img--1" r="16" cx="50%" cy="50%"></circle>
+				<circle class="preloader__svg-img preloader__svg-img--2" r="13" cx="50%" cy="50%"></circle>
+				<circle class="preloader__svg-img preloader__svg-img--3" r="10" cx="50%" cy="50%"></circle>
+			</svg>
+		</div><span class="preloader__text" id="preloader__text">0%</span>
+	</div>
+	<div class="wrapper">
+		<div class="container welcome-container">
+			<div class="welcome-container__parralax">
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_9.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_8.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_7.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_6.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_5.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_4.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_3.png" alt="parralax-image"/>
+				</div>
+				<div class="parralax__layer"><img class="parralax__layer-img" src="./assets/images/bg/parralax/layer_1.png" alt="parralax-image"/>
+				</div>
+			</div>
+			<div class="welcome__btn">
+				<button class="authbtn js-toggleBtn">Авторизоваться</button>
+			</div>
+			<div class="welcome__card">
+				<div class="user user--front">
+					<div class="user__content">
+						<div class="user__pic"><img class="user__img" src="./assets/images/content/user.jpg"/></div>
+						<h1 class="user__title">Владислав Маршал</h1>
+						<div class="user__txt">Личный сайт веб-разработчика</div>
+						<div class="user__socials">
+														<ul class="socials">
+															<li class="socials__item"><a class="socials__linkundefined" href="https://vk.com/rz-marshal">
+																	<svg class="socials__icon socials__icon--card">
+																		<use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+																	</svg></a></li>
+															<li class="socials__item"><a class="socials__linkundefined" href="https://github.com/rz-marshal">
+																	<svg class="socials__icon socials__icon--card">
+																		<use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+																	</svg></a></li>
+															<li class="socials__item"><a class="socials__linkundefined" href="https://github.com/rz-marshal">
+																	<svg class="socials__icon socials__icon--card">
+																		<use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+																	</svg></a></li>
+														</ul>
+						</div>
+					</div>
+					<div class="user__pages">
+						<div class="user__block"><a class="user__page" href="./works.html">Мои работы</a></div>
+						<div class="user__block"><a class="user__page" href="./about.html">Обо мне</a></div>
+						<div class="user__block"><a class="user__page" href="./blog.html">Блог</a></div>
+					</div>
+				</div>
+				<div class="user user--back js-toggle">
+					<div class="user__content">
+						<h1 class="user__title">
+							<div class="title title--auth">Авторизуйтесь</div>
+						</h1>
+						<div class="user__form">
+							<form class="form" id="authform">
+								<div class="form__input">
+									<div class="form__input-pic">
+										<svg class="form__input-icon">
+											<use xlink:href="./assets/images/icons/sprite.svg#login"></use>
+										</svg>
+									</div>
+									<input class="form__input-field" type="text" name="user" required="required"/>
+									<div class="error"></div>
+								</div>
+								<div class="form__input">
+									<div class="form__input-pic">
+										<svg class="form__input-icon">
+											<use xlink:href="./assets/images/icons/sprite.svg#password"></use>
+										</svg>
+									</div>
+									<input class="form__input-field" type="password" name="password" required="required"/>
+									<div class="error"></div>
+								</div>
+								<div class="form__chkbox">
+									<label class="form__chkbox-wrap">
+										<input class="form__check" type="checkbox" name="human"/>
+										<svg class="form__check-fake">
+											<use xlink:href="./assets/images/icons/sprite.svg#check"></use>
+										</svg><span class="form__check-text">я человек</span>
+										<div class="error"></div>
+									</label>
+								</div>
+								<div class="form__question"> <span class="form__question-text">Вы точно не робот?</span>
+									<div class="form__question-btns">
+										<label class="form__question-wrap" for="yes">
+											<input class="form__radio" type="radio" name="robot" value="yes" id="yes"/>
+											<div class="form__radio-fake"></div><span class="form__radio-text">Да</span>
+										</label>
+										<label class="form__question-wrap" for="no">
+											<input class="form__radio" type="radio" name="robot" value="no" id="no"/>
+											<div class="form__radio-fake"></div><span class="form__radio-text">Не уверен</span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="user__pages">
+						<div class="user__block">
+							<button class="user__page js-toggleBtn">На главную</button>
+						</div>
+						<div class="user__block">
+							<button class="user__page" id="loginBtn" type="button" method="POST">Войти</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="welcome__copyright">
+				<div class="copyright copyright_center">&copy; Владислав Маршал | Создано с любовью и кровью в LoftSchool | 2018 | &#9990;89117564050</div>
+			</div>
+		</div>
+		<script src="auth.bundle.js"></script>
+	</div>
+</html>

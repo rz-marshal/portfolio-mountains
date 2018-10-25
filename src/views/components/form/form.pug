@@ -1,0 +1,28 @@
+form.form#authform
+  .form__input
+    .form__input-pic
+      +icon('login', 'form__input-icon')
+    input(type='text', name='user' required).form__input-field
+    .error
+  .form__input
+    .form__input-pic
+      +icon('password', 'form__input-icon')
+    input(type='password' name='password', required).form__input-field
+    .error
+  .form__chkbox
+    label.form__chkbox-wrap
+      input(type='checkbox' name='human').form__check
+      +icon('check', 'form__check-fake')
+      span.form__check-text я человек
+      .error
+  .form__question 
+    span.form__question-text Вы точно не робот?
+    .form__question-btns
+      label.form__question-wrap(for="yes")
+        input(type='radio', name='robot' value='yes' id='yes').form__radio
+        .form__radio-fake
+        span.form__radio-text Да
+      label.form__question-wrap(for="no")
+        input(type='radio', name='robot' value='no' id='no').form__radio
+        .form__radio-fake
+        span.form__radio-text Не уверен

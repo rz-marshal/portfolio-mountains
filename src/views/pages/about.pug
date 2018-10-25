@@ -1,0 +1,12 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Обо мне'
+
+block scripts
+  script(src='about.bundle.js')
+
+block content
+
+      include ../components/skills/skills
+      include ../components/map/map

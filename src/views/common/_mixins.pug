@@ -1,0 +1,11 @@
+mixin icon(iconName, iconClass)
+  svg(class=`${iconClass}`)
+    use(xlink:href=`./assets/images/icons/sprite.svg#${iconName}`)
+
+mixin image(imagePath, imageAlt, imageClass)
+  img(src=`./assets/images/${imagePath}`, alt=`${imageAlt}`, class=`${imageClass}`)
+
+mixin circle(mod)
+  svg(viewbox="0 0 110 110").circle
+    circle(r='45',cx='50%',cy='50%', class="circle__grey circle__grey--" + `${mod}`)
+    circle(r='45',cx='50%',cy='50%', class="circle__green circle__green--" + `${mod}`)

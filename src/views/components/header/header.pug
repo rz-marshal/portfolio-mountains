@@ -1,0 +1,17 @@
+header.header
+    .header__background
+        +image('bg/hero.jpg', 'background', 'header__background-img')
+    .header__links
+        include ../socials/socials
+        +socials('header')
+
+    .header__menu
+        include ../menu/menu
+    .header__content
+        .header__pic
+            img.header__pic-img(src="./assets/images/content/user.jpg")
+        h1.header__title Владислав Маршал
+        span.header__txt Личный сайт веб-разработчика
+    .header__btn
+      button.arrow
+        +icon('arrow_down', 'arrow__down')

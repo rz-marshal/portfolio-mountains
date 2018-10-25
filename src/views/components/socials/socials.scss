@@ -1,0 +1,55 @@
+.socials {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    &--about{
+        position: absolute;
+        top: 20%; left: 30%;
+    }
+}
+.socials__item {
+    margin-right: 30px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.socials__link--rounded{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 100%;
+    transition: 300ms;
+    &:hover {
+        background: white;
+        border: none;
+    }
+}
+.socials__icon{
+display: block;
+width: 25px;
+height: 25px;
+cursor: pointer;
+transition: 300ms;
+        &--card{
+            fill: rgba($green, 0.5);
+            &:hover{
+                transition: 500ms;
+                fill:rgba($green, 1)
+                    }
+        }
+        &--header{
+            fill: $white;
+            opacity: 0.5;
+         &:hover {
+             opacity: 1;
+            }
+        }
+        &--footer{
+            width: 20px;
+            height: 20px;
+            fill:grey;
+            transform: translate(20%, 15%);
+
+        }
+}

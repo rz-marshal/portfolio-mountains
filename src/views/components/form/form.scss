@@ -1,0 +1,138 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form__input{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.form__input-pic{
+    background: $light-grey;
+    border-radius: 5px 0 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__input-icon{
+    fill:rgba($grey, 0.7);
+    width: 25px;
+    height: 25px;
+    &:hover{
+        fill:$green;
+    }
+    &--error{
+        fill: red;
+    }
+}
+.form__input-field{
+    width: 300px;
+    padding-left: 20px;
+    line-height: 39px;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 0 5px 5px 0;
+    &:focus {
+        color: $green;
+        outline-color: transparent;
+        border: 1px solid $green;
+    }
+    @include tablets{
+        width: 260px;
+    }
+    @include phones {
+        width: 220px;
+    }
+    &--error{
+        border: 1px solid red;
+    }
+}
+.form__chkbox{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__chkbox-wrap{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.form__check{
+    display: none;
+}
+.form__check-fake{
+    width: 17px;
+    height: 17px;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid rgba($light-grey, 0.7);
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba($grey, 0.5);
+    margin-right: 10px;
+    fill: transparent;
+}
+.form__check{
+    &:checked ~.form__check-fake{
+        transition: 300ms;
+        background-color: $green;
+        fill:$white;
+    }
+}
+
+.form__question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__question-text{
+flex: 1;
+margin-bottom: 10px;
+}
+.form__question-wrap{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.form__question-btns{
+    display: flex;
+    align-items: center;
+}
+.form__radio {
+    display: none;
+}
+
+.form__radio-fake{
+    display: block;
+    width: 17px;
+    height:17px;
+    background-color: $white;
+    border: 1px solid rgba($grey, 0.5);
+    border-radius: 50%;
+    margin-right: 7px;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.form__radio {
+    &:checked ~.form__radio-fake:before {
+        background-color: $green;
+        transition: 0.5s;
+    }
+}

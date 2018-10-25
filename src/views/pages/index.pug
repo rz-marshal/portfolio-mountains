@@ -1,0 +1,35 @@
+include ../common/_mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title WElcome
+    link(rel="stylesheet", href="main.min.css")
+  body
+  include ../components/preloader/preloader
+
+  .wrapper
+    .container.welcome-container
+        .welcome-container__parralax
+            .parralax__layer
+                +image('bg/parralax/layer_9.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_8.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_7.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_6.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_5.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_4.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_3.png', 'parralax-image', 'parralax__layer-img')
+            .parralax__layer
+                +image('bg/parralax/layer_1.png', 'parralax-image', 'parralax__layer-img')
+            
+        include ../components/card/card
+    script(src="auth.bundle.js")

@@ -1,0 +1,41 @@
+section.reviews
+      .reviews__title
+        h1.title Что обо мне говорят
+      .reviews__container
+        ul.reviews__list
+          li.reviews__item
+            .reviews__content
+              +image('content/quot.png', 'quot', 'rewiews__quot-img')
+              .reviews__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжёлых испытаний и бессонных ночей!
+            .reviewer_container
+              .reviewer__avatar
+                +image('content/review_avatar1.png', 'Ковальчук Дмитрий', 'reviewer__avatar-img')
+              .reviewer__data
+                .reviewer__name Ковальчук Дмитрий
+                .rewiewer__position основатель Loftschool
+
+          li.reviews__item
+            .reviews__content
+              +image('content/quot.png', 'quot', 'rewiews__quot-img')
+              .reviews__text Этот код выдержит лббые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+            .reviewer_container
+              .reviewer__avatar
+                +image('content/review_avatar2.png', 'Сабанцев Владимир', 'reviewer__avatar-img')
+              .reviewer__data
+                .reviewer__name Сабанцев Владимир
+                .rewiewer__position преподаватель
+      .feedback-container
+        .feedback__blur
+          .feedback__blur-elem
+        form.feedback-form
+          .feedback__subtitle
+            .subtitle Связаться со мной
+          input(placeholder='Имя').feedback__text.input__name
+          input(placeholder='Email').feedback__text.input__email
+          input(placeholder='Ваше сообщение').feedback__text.feedback__text--message
+          .buttons__row
+            button(type="submit").button.button__send Отправить
+            button(type='reset').button.button__clear Очистить
+      .bottom__arrow
+        button.arrow
+          +icon('portf_arrow_up', 'arrow__down')

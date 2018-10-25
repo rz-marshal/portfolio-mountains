@@ -1,0 +1,150 @@
+.slider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $light-grey;
+
+}
+.slider__title{
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.slider__display{
+background: $light-grey;
+display: grid;
+grid-template: 
+  "info display" 70%
+  "info btns" 30%
+  /2fr 1fr;
+  @include narrow {
+    grid-template: 
+    "display" 500px
+    "info" 300px
+    "btns" 200px
+    /1fr
+  }
+}
+.slider__description{
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $light-grey;
+  @include narrow {
+    margin-bottom: 20px;
+  }
+}
+.description__container{
+  padding-top: 20px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description__text {
+  width: 100%;
+  text-align: center;
+  color: $green;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-top: 2px solid rgba($green, 0.3);
+  border-bottom: 2px solid rgba($green, 0.3);
+  margin-bottom: 39px;
+}
+.description__title {
+  max-width: 260px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+.description__button {
+  background: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.description__button-img {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-right: 10px;
+}
+.slider__preview {
+  grid-area: display;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__prev-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+}
+.slider__control-row{
+  grid-area: btns;
+  user-select: none;
+  display: flex;
+}
+.prev-slide__img{
+  max-width:100%;
+  max-height:100%;
+  vertical-align:middle;
+}
+.slider__button {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: rgba(136, 131, 114, 0.5);
+  transition: .1s;
+  &:first-child {
+    border-right: 1px solid #c0bfbb;
+  }
+  @include phones {
+    min-width: 50%;
+  }
+}
+.slider__button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(136, 131, 114, 0.5);
+  z-index: 1;
+
+  &:hover{
+    background-color: rgba(182, 180, 174, 0.7);
+  }
+}
+.slider__button-icon{
+  width: 40px;
+  height: 40px;
+  fill: white;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.control-slide__img {
+  width: 300px;
+  height: 100%;
+  @include phones {
+    width: 100%;
+    height: auto;
+  }
+}

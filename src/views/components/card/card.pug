@@ -1,0 +1,27 @@
+.welcome__btn
+    button.authbtn.js-toggleBtn Авторизоваться
+.welcome__card
+    .user.user--front
+        .user__content
+            .user__pic
+                img.user__img(src="./assets/images/content/user.jpg")
+            h1.user__title Владислав Маршал
+            .user__txt Личный сайт веб-разработчика
+            .user__socials
+                include ../socials/socials
+                +socials('card')
+        .user__pages
+                .user__block: a.user__page(href="./works.html") Мои работы
+                .user__block: a.user__page(href="./about.html") Обо мне
+                .user__block: a.user__page(href="./blog.html") Блог
+    .user.user--back.js-toggle
+        .user__content
+            h1.user__title
+                .title.title--auth Авторизуйтесь
+            .user__form
+                include ../form/form
+        .user__pages
+            .user__block: button.user__page.js-toggleBtn На главную
+            .user__block: button.user__page#loginBtn(type='button' method="POST") Войти
+.welcome__copyright
+    .copyright.copyright_center &copy; Владислав Маршал | Создано с любовью и кровью в LoftSchool | 2018 | &#9990;89117564050

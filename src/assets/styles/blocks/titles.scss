@@ -1,0 +1,96 @@
+.title{
+    background: url('./assets/images/icons/sprite.svg#vk');
+    background-size: 10px 10px;
+    color: $text-color;
+    font-family: 'bernier';
+    font-size: 48px;
+    position: relative;
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        border: 3px solid $grey;
+        background-color: $grey;
+                opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        transform: translate(-200%, -50%);
+        @include phones {
+            width: 10px;
+            border: 2px solid $grey;
+        }
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        border: 3px solid $grey;
+        background-color: $grey;
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        transform: translate(100%, -50%);
+        @include phones {
+            width: 10px;
+            border: 2px solid $grey;
+        }
+    }
+    &--auth{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    &--clean{
+        &:before {
+            content: none;
+          }
+        
+          &:after {
+            content: none;
+          }
+    }
+    @include phones {
+        font-size:  35px;
+    }
+
+}
+.subtitle{
+    color: $text-color;
+    font-family: 'bernier';
+    font-size: 24px;
+    position: relative;
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        border: 3px solid $grey;
+        background-color: $grey;
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        transform: translate(-200%, -50%);
+        @include phones {
+            width: 10px;
+            border: 2px solid $grey;
+        }
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        border: 3px solid $grey;
+        background-color: $grey;
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        transform: translate(100%, -50%);
+        @include phones {
+            width: 10px;
+            border: 2px solid $grey;
+        }
+    }
+}
+
+.auth__title{
+    margin-bottom: 18px;
+}
+

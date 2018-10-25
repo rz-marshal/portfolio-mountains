@@ -1,0 +1,76 @@
+.about{
+    display: flex;
+    @include narrow{
+        display: block;
+    }
+}
+.about__col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $white;
+    margin-top: -150px;
+    padding-top: 150px;
+    @include narrow {
+        width: 100%;
+    }
+    &_bg__beige{
+        background-color: $beige;
+        @include narrow {
+            width: 100%;
+            margin-top: 0;
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    @include phones {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.about__title{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/images/icons/sprite.svg#vk");
+    background-size: cover;
+}
+.about__content {
+    width: 28.125rem;
+    @include narrow{
+        width: 26rem;
+    }
+    @include phones {
+        width: 300px;
+    }
+}
+.about__right-title{
+    margin-bottom: 45px;
+}
+.about__small-desc{
+    margin-bottom: 60px;
+    padding: 0 40px;
+    @include narrow {
+        padding: 0;
+        width: 26rem;
+    }
+    @include phones {
+        width: 300px;
+    }
+}
+.about__info-container{
+    padding: 0 40px;
+    align-self: flex-start;
+    @include narrow {
+        align-self: initial;
+    }
+    @include phones {
+        padding: 0;
+    }
+}

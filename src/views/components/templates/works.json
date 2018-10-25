@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title" : "Сайт фитнес центра",
+      "skills" : " HTML, CSS",
+      "photo" : "./assets/images/content/slider1.png",
+      "link" : ""
+    },
+    {
+      "id": 2,
+      "title" : "Сайт магазина бургеров",
+      "skills" : "Html, SCSS, JS, JQuerry, YandexApi",
+      "photo" : "./assets/images/content/slider2.png",
+      "link" : ""
+    },
+    {
+      "id": 3,
+      "title" : "Сайт портфолио",
+      "skills" : "Pug, SCSS, JS, Vue.js, Gulp, npm",
+      "photo" : "./assets/images/content/slider3.png",
+      "link" : ""
+    }
+  ]

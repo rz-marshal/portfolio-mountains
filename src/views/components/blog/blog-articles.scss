@@ -1,0 +1,43 @@
+.articles{
+  @include tablets{
+    margin:0 4%;
+  }
+}
+.articles__item {
+  border-bottom: 5px solid #00bfa5;
+  border-color: rgba($grey, 0.07);
+  margin-bottom: 64px;
+}
+
+.articles__list :last-child {
+  border: none;
+  margin-bottom: 0;
+}
+.article {
+  max-width: 681px;
+  padding-bottom: 70px;
+}
+
+.article__title {
+  font-family: 'bernier';
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+  margin-bottom: 28px;
+}
+
+.article__date {
+  color: #00bfa5;
+  margin-bottom: 28px;
+}
+.article__content{
+
+}
+.articletext{
+}
+.article__pic{
+  width:95%;
+}
+.article__img{
+  max-width:100%
+}

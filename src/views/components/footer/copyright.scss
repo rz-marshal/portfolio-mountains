@@ -1,0 +1,27 @@
+.copyright{
+    color: $white;
+    width: 100%;
+    z-index: 1;
+    &_center{
+        bottom: -80%;
+        text-align: center;
+    }
+    &_margin_left{
+        margin-left: 30px;
+        @include tablets {
+            text-align: center;
+            margin-left: initial;
+        }
+        @include phones {
+            align-items: center;
+        }
+    }
+    &_align_right{
+        text-align: right;
+        margin-right: 30px;
+    }
+    @include phones {
+        text-align: center;
+        line-height: 1.4;
+    }
+}

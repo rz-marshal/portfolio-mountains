@@ -1,0 +1,25 @@
+.arrow{
+    background: transparent;
+    cursor: pointer;
+    transition: 300ms;
+    opacity: 0.7;
+    padding: 0;
+    &:hover {
+        opacity: 1;
+    }
+}
+.arrow__down{
+    fill: $white;
+    width: 30px;
+    height: 30px;
+
+}
+
+.bottom__arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }

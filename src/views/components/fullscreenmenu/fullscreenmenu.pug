@@ -1,0 +1,7 @@
+.fullscreenmenu
+    .fullscreenmenu__btn
+        +icon('close', 'fullscreenmenu__close')
+    ul.fullscreenmenu__list
+        each item in [['works.html','Мои работы'], ['about.html','Обо мне'], ['blog.html','Блог'], ['index.html?auth','Авторизация']]
+            li.fullscreenmenu__item
+                a.fullscreenmenu__link(href=`${item[0]}`) #{item[1]}
